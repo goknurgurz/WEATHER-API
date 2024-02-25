@@ -1,0 +1,98 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: wheat;
+background-image: url(https://www.desktopbackground.org/download/1280x960/2011/08/30/258137_coolest-desktop-backgrounds-wallpapers-cave_1920x1079_h.jpg);
+font-size: 120%;
+}
+.card {
+    background: #3d4e61ca;
+    color: wheat;
+    padding: 3rem;
+    border-radius: 45px;
+    width: 100%;           /* ekran boyutunu degistirdigindeki ayarlanan boyut */
+    max-width: 350px;
+    margin: 2em; /*  */
+
+
+  }
+
+  .search { /* input ve button tamami */
+    
+    display: flex;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+  button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    height: 44px;
+    width: 44px;
+    outline: none;
+    background: #1917175c;
+    color: rgba(8, 24, 149, 0.489);
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+  }
+
+  input.search-bar {
+    border: none;
+    outline: none;
+    padding: 0.4em 1em;
+    border-radius: 24px;
+    background: #dfbdbd94;
+    color: rgba(1, 7, 18, 0.816);
+    font-family: inherit;
+    font-size: 90%;
+    width: 80%;
+  }
+
+  button:hover {
+    background: #e5e1e194;
+  }
+
+  h1.temp {
+    margin: 0;
+    margin-bottom: 0.4em;
+  }
+
+  .flex {
+    display: flex;
+    align-items: center;
+  }
+
+  .description {
+    text-transform: capitalize;
+    margin-left: 8px;
+  }
+
+
+  .weather.loading { /* search yazilan ciikicak */
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+  }
+
+  .weather.loading:after { 
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+  }
+
+  
